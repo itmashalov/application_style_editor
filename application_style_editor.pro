@@ -1,0 +1,1 @@
+include(general_application_style_editor/submodules.pri)

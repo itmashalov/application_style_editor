@@ -1,0 +1,199 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="media/style.css">
+ <script type="text/javascript" src="scripts/jquery/jquery.js"  ></script>
+<title>Application Style Editor</title>
+
+<script>
+	jQuery(document).ready(function()
+		{
+
+			$(".goo-collapsible > li > a").on("click", function(e){
+				  
+				if(!$(this).hasClass("active")) {
+		
+				  // hide any open menus and remove all other classes
+					$(".goo-collapsible li ul").slideUp(350);
+					$(".goo-collapsible li a").removeClass("active");
+				  
+					// open our new menu and add the open class
+					$(this).next("ul").slideDown(350);
+					$(this).addClass("active");
+		
+				}else if($(this).hasClass("active")) {
+		
+					$(this).removeClass("active");
+					$(this).next("ul").slideUp(350);
+				}
+			});
+			
+			
+			
+		
+			
+			
+			
+			
+
+		});
+		
+		
+		jQuery(document).ready(function()
+		{
+		
+			$(".goo-collapsible2 > li > a").on("click", function(e){
+				  
+				if(!$(this).hasClass("active")) {
+		
+				  // hide any open menus and remove all other classes
+					$(".goo-collapsible2 li ul").slideUp(350);
+					$(".goo-collapsible2 li a").removeClass("active");
+				  
+					// open our new menu and add the open class
+					$(this).next("ul").slideDown(350);
+					$(this).addClass("active");
+		
+				}else if($(this).hasClass("active")) {
+		
+					$(this).removeClass("active");
+					$(this).next("ul").slideUp(350);
+				}
+			});
+		});
+			
+</script>
+
+
+
+</head>
+<body>
+	<div  id="frame" style="   top: 5%;left:10%;  width:80%;display:block;">
+		<h1 style="text-align:center">Application Style Editor</h1>
+		<hr></hr>
+		<div  id="frame2" style="   top: 5%;left:10%;  width:40%;display:block;     ">
+			<div style="position: relative;display:block;text-align:center;width:80%;   margin:auto; " >
+				<p  style="text-align:left; width:100%;font-size:105%  left:200px;font-size:125%">
+				  Application style editor is a program which provides functionality for changing various styles of differnt apps, like adjusting colors or layouts.
+				</p>
+			</div>
+		</div>
+		
+		<div class="menu">
+		
+			<ul class="goo-collapsible">
+				<li class="header" style=" font-size:1.3em;text-aling:center"><span class="round-button" > </span>Editors:</li>
+				<hr></hr>
+				<li class='dropdown'><a class='' href='#' style=" font-size:1.3em">1. Color Editor</a>
+		        	 
+				 
+				      		 
+		
+								<ul class="goo-collapsible2">
+									 
+									<hr></hr>
+									<li class='dropdown2'><a class='' href='#' style=" font-size:1.3em; ">1.1 Start Color Editor</a>
+							        	<ul>
+									       <li><p  style="position: relative; text-align: left;font-size:1.2em;width:80%;margin-left:8%;"> 
+												 When you start the program and choose the color editor there will load the default colors of the current app but only if the app has run at least once before that.
+												  You can keep the app and the editor running at the same time for preview purposes. 
+												  If the app has not been running before that you have two other options. 
+												</p></br>
+												 
+												
+							
+							
+											 
+									 
+									 
+							
+											</li>
+										</ul>
+									</li>
+							        <hr></hr>
+							        <li  class='dropdown2'><a href='#' style=" font-size:1.3em"></span> 1.2 Load Document</a>
+							        	<ul>
+							         		 <li><p  style="position: relative; text-align: left;font-size:1.2em;width:80%;margin-left:8%;"> 
+												The first option is to load a document using the load button and when the document is loaded you can edit it's colors. Every element in the app has it's own unique name, it is not possible to have elements with the same name, for example: if the name is "background" with color green, there will not be another element called background. This is important thing to mention especially for the second option - new document.
+												</p></br>
+																						
+							
+							
+											</li>
+										</ul>
+							        </li>
+							         <hr></hr>
+							        <li  class='dropdown2'><a href='#' style=" font-size:1.3em"></span> 1.3  New Document</a>
+							        	<ul>
+							         		<li><p  style="position: relative; text-align: left;font-size:1.2em;width:80%;margin-left:8%;"> 
+												The new document option is useful when you want to constuct a new document with unique names for every element and to apply colors for your application. It is important to know that you can enter only valid color names or hex codes,
+												for example:red or #ffffff; RGB is not supported. You can add new lines and remove lines. 
+												The maximum number of lines which can be added is 200.
+												</p></br>
+												 
+												
+							
+							
+											</li>
+										</ul>
+							        </li>
+							        <hr></hr>
+							        <li  class='dropdown2'><a href='#' style=" font-size:1.3em"></span> 1.4 Saving Changes</a>
+							        	<ul>
+							         		 <li><p  style="position: relative; text-align: left;font-size:1.2em;width:80%;margin-left:8%;"> 
+												You can save changes at any time, you just need to click the save button. You can save changes in the load section or in new document section. You should know that although you can see the changes live on the app while editing the colors, these changes are not saved automatically!
+												</p></br>
+												 
+												
+							
+							
+											</li>
+										</ul>
+							        </li>
+							      <hr></hr>
+							        <li  class='dropdown2'><a href='#' style=" font-size:1.3em"></span> 1.5 Preview</a>
+							        	<ul>
+							         		 <li><p  style="position: relative; text-align: left;font-size:1.2em;width:80%;margin-left:8%;"> 
+												 You can preview the changes live on the app if it is running on a side but it is not required. There are also painted rectangles which represent the colors in the editor, these rectangles help to determine the color codes and names.
+												</p></br>
+												 
+												
+							
+							
+											</li>
+										</ul>
+							        </li>
+							        <hr></hr>
+									</br>
+									</br>
+									
+								</ul>
+							    
+							 
+							 
+							
+		
+		  
+				 
+		
+						 
+					 
+				</li>
+		        <hr></hr>
+		        <li  class='dropdown'><a href='#' style=" font-size:1.3em"></span> 2. Layour Editor</a>
+		        	<ul>
+		         		 <li><p  style="position: relative; text-align: center;font-size:1.2em">layour editor documentations goes here
+							</p></br>
+							 
+							
+		
+		
+						</li>
+					</ul>
+		        </li>
+		        <hr></hr>
+			</ul>
+		    
+		</div>
+	</div>
+</body>
+</html>
